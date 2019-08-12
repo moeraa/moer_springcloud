@@ -11,23 +11,54 @@
     <modules>
         <module>microservicecloud</module>
     </modules>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>nexus-aliyun</id>-->
+<!--            <name>Nexus aliyun</name>-->
+<!--            <url>http://repo.maven.org/maven2/</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
+    <properties>
+        <springcloud.version>Dalston.SR1</springcloud.version>
+        <springboot.version>1.5.9.RELEASE</springboot.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-dependencies</artifactId>
-            <version>Dalston.SR1</version>
+            <version>${springcloud.version}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-dependencies</artifactId>
-            <version>2.1.3.RELEASE</version>
+            <version>${springboot.version}</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
 
     </dependencies>
+    <build>
+        <finalName>microservicecloud</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <delimiters>
+                        <delimiter>$</delimiter>
+                    </delimiters>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

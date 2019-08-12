@@ -9,18 +9,14 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>microservicecloud-consumer-dept-80</artifactId>
-    <description>部门消费者 </description>
+    <artifactId>microservicecloud-eureka-7002</artifactId>
+
 
     <dependencies>
-        <dependency><!-- 自己定义的api -->
-            <groupId>com.moer.springcloud</groupId>
-            <artifactId>microservicecloud-api</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+        <!--eureka-server服务端 -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
         </dependency>
         <!-- 修改后立即生效，热部署 -->
         <dependency>
@@ -33,5 +29,5 @@
         </dependency>
     </dependencies>
 
-
 </project>
+
