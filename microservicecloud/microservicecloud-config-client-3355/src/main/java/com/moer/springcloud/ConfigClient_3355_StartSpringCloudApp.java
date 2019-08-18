@@ -1,9 +1,13 @@
-/**
- * @Auther: moer
- * @Date: 2019/8/18 16:07
- * @Description:
- */
+package com.moer.springcloud;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class ConfigClient_3355_StartSpringCloudApp
 {
-
+  public static void main(String[] args)
+  {
+    SpringApplication.run(ConfigClient_3355_StartSpringCloudApp.class,args);
+  }
 }

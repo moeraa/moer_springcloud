@@ -2,8 +2,10 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/microservicecloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud/microserivcecloud-config-eureka-client-7001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud/microservice-provider-dept-hystrix-8001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud/microservicecloud-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud/microservicecloud-config-client-3355" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud/microservicecloud-consumer-dept-80" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud/microservicecloud-consumer-dept-fegin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud/microservicecloud-consumer-hystrx-dashboard" charset="UTF-8" />
@@ -15,5 +17,6 @@
     <file url="file://$PROJECT_DIR$/microservicecloud/microservicecloud-provider-dept-8002" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud/microservicecloud-provider-dept-8003" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microservicecloud/microservicecloud-zuul-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/microservicecloud/micrservicecloud-config" charset="UTF-8" />
   </component>
 </project>
