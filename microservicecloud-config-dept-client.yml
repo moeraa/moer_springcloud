@@ -16,7 +16,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     driver-class-name: org.gjt.mm.mysql.Driver
-    url: jdbc:mysql://localhost:3306/clouddb02
+    url: jdbc:mysql://localhost:3306/clouddb01
     username: root
     password: root
     dbcp2:
@@ -31,7 +31,7 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
 
   instance:
-    instance-id: microservicecloud-dept8002
+    instance-id: microservicecloud-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址
 info:
   app.name: moer-microservicecloud
@@ -67,7 +67,7 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
 
   instance:
-    instance-id: microservicecloud-dept8001
+    instance-id: microservicecloud-dept8002
     prefer-ip-address: true     #访问路径可以显示IP地址
 info:
   app.name: moer-microservicecloud
