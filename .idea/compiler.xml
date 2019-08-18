@@ -2,18 +2,23 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="microservicecloudproviderdept8002" />
         <module name="microservicecloudproviderdept8001" />
+        <module name="microservicecloudzuulgateway" />
+        <module name="microservicecloudconsumerdeptfegin" />
         <module name="microservicecloud-eureka-7001" />
-        <module name="microservicecloudeureka7003" />
-        <module name="microservicecloudeureka7002" />
-        <module name="microservicecloud-api" />
-        <module name="microservicecloudconsumerdept80" />
+        <module name="microservicecloudconsumerhystrxdashboard" />
+        <module name="microserviceproviderdepthystrix8001" />
         <module name="microservicecloudproviderdept8003" />
+        <module name="microservicecloudeureka7002" />
+        <module name="microservicecloudeureka7003" />
+        <module name="microservicecloudconsumerdept80" />
+        <module name="microservicecloud-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

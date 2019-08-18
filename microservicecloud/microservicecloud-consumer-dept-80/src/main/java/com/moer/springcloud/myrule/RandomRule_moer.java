@@ -1,4 +1,4 @@
-package com.moer.springcloud;
+package com.moer.springcloud.myrule;
 
 import com.netflix.client.config.IClientConfig;
 import com.netflix.loadbalancer.*;

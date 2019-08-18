@@ -1,9 +1,15 @@
 package com.moer.springcloud;
 
-/**
- * @Auther: moer
- * @Date: 2019/8/18 14:25
- * @Description:
- */
-public class Zuul_9527_StartSpringCloudApp {
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
+
+@SpringBootApplication
+@EnableZuulProxy
+public class Zuul_9527_StartSpringCloudApp
+{
+  public static void main(String[] args)
+  {
+    SpringApplication.run(Zuul_9527_StartSpringCloudApp.class, args);
+  }
 }

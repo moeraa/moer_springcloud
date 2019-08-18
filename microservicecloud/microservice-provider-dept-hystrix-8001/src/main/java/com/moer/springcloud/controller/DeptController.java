@@ -2,6 +2,7 @@ package com.moer.springcloud.controller;
 
 import com.moer.springcloud.entites.Dept;
 import com.moer.springcloud.service.DeptService;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -31,10 +32,16 @@ public class DeptController {
   public List<Dept> add() {
     return deptService.list();
   }
-
+  //不够灵活 高耦合
   @RequestMapping(value = "/dept/get/{id}", method = RequestMethod.GET)
+  @HystrixCommand(fallbackMethod = "processHystrix_Get")
   public Dept gey(@PathVariable("id") Long id) {
-    return deptService.get(id);
+    Dept dept = this.deptService.get(id);
+    if (null == dept){
+      throw new RuntimeException("该id " + id + "没有对应的信息");
+    }else {
+      return dept;
+    }
   }
 
   @RequestMapping(value = "/dept/discovery", method = RequestMethod.GET)
@@ -49,6 +56,11 @@ public class DeptController {
           + element.getUri());
     }
     return this.discoveryClient;
+  }
+
+  public Dept processHystrix_Get(@PathVariable("id") Long id){
+    return new Dept().setDeptno(id).setDname("该id "+ id + "没有对应的信息，null -- @HystrilxCommand")
+        .setDb_source("no this database in MYSQL");
   }
 
 }
