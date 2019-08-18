@@ -15,7 +15,7 @@
     <dependencies>
         <!-- 自己定义的api -->
         <dependency>
-            <groupId>com.atguigu.springcloud</groupId>
+            <groupId>com.moer.springcloud</groupId>
             <artifactId>microservicecloud-api</artifactId>
             <version>${project.version}</version>
         </dependency>

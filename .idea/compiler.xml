@@ -21,6 +21,7 @@
         <module name="microservicecloudconsumerdept80" />
         <module name="microservicecloud-api" />
         <module name="microservicecloudconfigclient3355" />
+        <module name="microservicecloudconfigproviderdept8001" />
         <module name="microserviceproviderdepthystrix8001" />
       </profile>
     </annotationProcessing>
